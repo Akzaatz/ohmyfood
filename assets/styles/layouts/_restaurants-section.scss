@@ -1,0 +1,43 @@
+.restaurants-section {
+  background: $grey2;
+
+  margin-bottom: 60px;
+  h4 {
+    font-family: $font5;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 30px 20px;
+  }
+
+  #palette-du-gout img,
+  #note-enchantee img,
+  #la-francaise img,
+  #delices-sens img {
+    border-radius: 30px 30px 0 0;
+    padding: 20px 20px 0;
+    width: 100%;
+    height: 251px;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .card-txt {
+    text-align: left;
+    margin: 0 20px;
+    padding: 15px;
+    line-height: 25px;
+    background: white;
+    border-radius: 0 0 20px 20px;
+  }
+  .card-title {
+    font-family: $font5;
+    font-size: 1.125rem;
+  }
+  .card-subtitle {
+    font-family: $font3;
+    font-size: 1.063rem;
+  }
+}

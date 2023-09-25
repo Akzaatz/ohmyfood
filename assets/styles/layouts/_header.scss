@@ -1,0 +1,38 @@
+header{
+   
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows:73px 50px ;
+   
+
+.logo{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+}
+h1{
+    font-family: $font1;
+  font-size: 1.875rem;
+}
+
+.loc{
+    background:$grey1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    position: relative;
+   }
+
+   .loc i{
+    position: absolute;
+    left: 110px;
+   }
+ 
+
+}
+
+   
+
+
+

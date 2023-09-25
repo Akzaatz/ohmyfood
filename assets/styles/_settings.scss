@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../fonts/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+$font1: Shrikhand;
+$font2: Roboto;
+$font3: Roboto-light;
+$font4: Roboto-Medium;
+$font5: Roboto-Bold;
+$black: #101010;
+$grey1: #ebebea;
+$grey2: #f6f6f6;
+$grey3: #343435;
+$pink: #fcc0ce;
+$green1: #99e2d0;
+$green2: #008766;
+$blue1: #89c8fa;
+$blue2: #003a68;
+$purple: #9356dc;
+$gradient: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15)
+  ),
+  linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+
+@mixin allCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+body {
+  text-align: center;
+  font-family: $font4;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+.ellipse {
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
+  left: 0px;
+  top: 0px;
+  background: $purple;
+  color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: 25px;
+  left: -10px;
+}

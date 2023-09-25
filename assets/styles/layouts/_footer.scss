@@ -1,0 +1,10 @@
+footer {
+  background: $grey3;
+  color: white;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 30px;
+  gap: 10px;
+}
