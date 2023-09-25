@@ -4,7 +4,18 @@ footer {
   display: grid;
   justify-items: start;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 30% 70%;
   padding: 30px;
-  gap: 10px;
+
+  .partnership ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+  .partnership ul li i {
+    padding-right: 10px;
+  }
 }
