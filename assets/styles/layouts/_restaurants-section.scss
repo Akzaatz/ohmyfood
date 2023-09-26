@@ -18,52 +18,53 @@
     width: 100%;
     height: 251px;
   }
-  .cards-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-  }
-  .card-txt {
+
+  .card-content {
     text-align: left;
     margin: 0 10px;
-    padding: 15px;
+    padding: 10px;
     line-height: 25px;
     background: white;
     border-radius: 0 0 20px 20px;
-  }
-  .card-title {
-    font-family: $font5;
-    font-size: 1.125rem;
-  }
-  .card-subtitle {
-    position: relative;
-    display: grid;
-    grid-template-columns: 70% 10% 20%;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      " sub"
-      "imp"
-      "spa";
-    font-family: $font3;
-    font-size: 1.063rem;
-  }
-  .card-subtitle i {
-    top: -10px;
-    position: absolute;
-    padding-left: 50px;
-    font-size: 1.8rem;
-  }
 
-  input[type="checkbox"] {
-    display: none;
-  }
-  label {
-    cursor: pointer;
-  }
+    .card-title p {
+    }
 
-  label :hover {
-    color: $purple;
-    font-weight: 900;
+    .card-title {
+      position: relative;
+      display: grid;
+      grid-template-columns: 90% 10%fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "ttl lab"
+        "stl inp";
+      font-family: $font5;
+      font-size: 1.125rem;
+    }
+    .card-title h3 {
+      grid-area: ttl;
+    }
+    .card-title input {
+      grid-area: inp;
+    }
+    .subtitle {
+      font-family: $font3;
+      font-size: 1.063rem;
+      grid-area: stl;
+    }
+    .card-title label {
+      cursor: pointer;
+      position: absolute;
+      font-size: 2rem;
+      top: 10px;
+      right: 30px;
+    }
+    input[type="checkbox"] {
+      display: none;
+    }
+    input[type="checkbox"]:checked + label i {
+      color: $purple;
+      font-weight: 900;
+    }
   }
 }

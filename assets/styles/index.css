@@ -147,46 +147,45 @@ header .loc i {
   width: 100%;
   height: 251px;
 }
-.restaurants-section .cards-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-}
-.restaurants-section .card-txt {
+.restaurants-section .card-content {
   text-align: left;
   margin: 0 10px;
-  padding: 15px;
+  padding: 10px;
   line-height: 25px;
   background: white;
   border-radius: 0 0 20px 20px;
 }
-.restaurants-section .card-title {
+.restaurants-section .card-content .card-title {
+  position: relative;
+  display: grid;
+  grid-template-columns: 90% 10% fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "ttl lab" "stl inp";
   font-family: Roboto-Bold;
   font-size: 1.125rem;
 }
-.restaurants-section .card-subtitle {
-  position: relative;
-  display: grid;
-  grid-template-columns: 70% 10% 20%;
-  grid-template-rows: 1fr;
-  grid-template-areas: " sub" "imp" "spa";
+.restaurants-section .card-content .card-title h3 {
+  grid-area: ttl;
+}
+.restaurants-section .card-content .card-title input {
+  grid-area: inp;
+}
+.restaurants-section .card-content .subtitle {
   font-family: Roboto-light;
   font-size: 1.063rem;
+  grid-area: stl;
 }
-.restaurants-section .card-subtitle i {
-  top: -10px;
+.restaurants-section .card-content .card-title label {
+  cursor: pointer;
   position: absolute;
-  padding-left: 50px;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  top: 10px;
+  right: 30px;
 }
-.restaurants-section input[type=checkbox] {
+.restaurants-section .card-content input[type=checkbox] {
   display: none;
 }
-.restaurants-section label {
-  cursor: pointer;
-}
-.restaurants-section label :hover {
+.restaurants-section .card-content input[type=checkbox]:checked + label i {
   color: #9356dc;
   font-weight: 900;
 }
