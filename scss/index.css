@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../../assets/fonts/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../../fonts/Roboto-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: #101010;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  font-family: Roboto-Medium;
+  font-size: 1rem;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  font-family: Roboto-Medium;
+  color: white;
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+
+.choose-section .choose-section__restos, .choose-section a, .restaurants-section .card-content__encart, header .header__loc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header .header__logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+header .header__logo img {
+  width: 50%;
+}
+header .header__loc {
+  background: #ebebea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+header .header__loc i {
+  padding-right: 10px;
+}
+
+.search-section {
+  background: #f6f6f6;
+  padding: 40px;
+}
+.search-section h1 {
+  padding-bottom: 15px;
+  font-family: Roboto-Bold;
+  font-size: 1.5rem;
+}
+.search-section p {
+  font-family: Roboto-light;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+
+.restaurants-section {
+  background: #f6f6f6;
+  padding-bottom: 60px;
+}
+.restaurants-section h3 {
+  font-family: Roboto-Bold;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 30px 20px;
+}
+.restaurants-section .restaurants-section__cards-container img {
+  border-radius: 30px 30px 0 0;
+  padding: 20px 10px 0;
+  width: 100%;
+  height: 251px;
+}
+.restaurants-section .card-content {
+  text-align: left;
+  margin: 0 10px;
+  padding: 10px;
+  line-height: 25px;
+  background: white;
+  border-radius: 0 0 20px 20px;
+}
+.restaurants-section .restaurants-section__cards-container {
+  position: relative;
+}
+.restaurants-section .card-content__encart {
+  background: #99e2d0;
+  position: absolute;
+  top: 3%;
+  right: 20px;
+  height: 29px;
+  width: 80px;
+  font-family: Roboto-Medium;
+  font-size: 0.875rem;
+}
+.restaurants-section .card-content__encart.card-content__encart p {
+  color: #008766;
+}
+.restaurants-section h4 {
+  font-family: Roboto-Bold;
+  font-size: 1.125rem;
+}
+.restaurants-section .card-content__title {
+  position: relative;
+  display: grid;
+  grid-template-columns: 90% 10% fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "ttl vde" "vde lab" "stl vde";
+}
+.restaurants-section h4 {
+  grid-area: ttl;
+}
+.restaurants-section .fa-solid {
+  grid-area: lab;
+}
+.restaurants-section .subtitle {
+  font-family: Roboto-light;
+  font-size: 1.063rem;
+  grid-area: stl;
+}
+
+.choose-section {
+  margin-bottom: 60px;
+  /*.choose-section__restos__encart {
+    @include absolute-el(0, 0, 50px, 0, 0, 0);
+    background: $green1;
+    width: 10%;
+    height: 29px;
+  }
+
+  .choose-section__restos__encart p {
+    color: $green2;
+  }
+  */
+}
+.choose-section h2 {
+  font-family: Roboto-Bold;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 30px 20px;
+}
+.choose-section nav {
+  display: grid;
+  gap: 40px;
+}
+.choose-section .choose-section__restos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  background: #f6f6f6;
+  width: 90%;
+  height: 72.38px;
+  border-radius: 20px;
+  margin: 0 10px;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  font-family: Roboto-Medium;
+}
+.choose-section .fa-solid {
+  font-weight: 900;
+}
+.choose-section .fa-solid.fa-list-ul, .choose-section .fa-solid.fa-mobile-screen-button {
+  color: #343435;
+}
+.choose-section .fa-solid.fa-store {
+  color: #9356dc;
+}
+.choose-section .choose-section__restos__ellipse {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: -10px;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
+  background: #9356dc;
+  color: white;
+  border-radius: 100%;
+}
+
+footer {
+  background: #343435;
+  color: white;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 70%;
+  padding: 30px;
+}
+footer .partnership ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+footer .partnership ul li i {
+  padding-right: 10px;
+}/*# sourceMappingURL=index.css.map */

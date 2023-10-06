@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  flex-direction: column;
+
+  .header__logo {
+    justify-content: center;
+    display: flex;
+    padding: 15px;
+  }
+  .header__logo img {
+    width: 50%;
+  }
+
+  .header__loc {
+    @extend %all-center;
+    background: $grey1;
+    display: flex;
+    height: 50px;
+  }
+
+  .header__loc i {
+    padding-right: 10px;
+  }
+}

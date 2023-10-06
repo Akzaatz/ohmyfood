@@ -1,28 +1,36 @@
+// imports fonts
+
 @font-face {
   font-family: "Shrikhand";
-  src: url(../fonts/Shrikhand-Regular.ttf);
+  src: url(../../assets/fonts/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../../fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto-bold";
-  src: url(../fonts/Roboto-Bold.ttf);
+  src: url(../../fonts/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: "Roboto-Light";
-  src: url(../fonts/Roboto-Light.ttf);
+  src: url(../../fonts/Roboto-Light.ttf);
 }
 @font-face {
   font-family: "Roboto-Medium";
-  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../../fonts/Roboto-Medium.ttf);
 }
+
+// Variables :
+
+// ========FONTS==========
 $font1: Shrikhand;
 $font2: Roboto;
 $font3: Roboto-light;
 $font4: Roboto-Medium;
 $font5: Roboto-Bold;
+
+//  ========COULEURS==========
 $black: #101010;
 $grey1: #ebebea;
 $grey2: #f6f6f6;
@@ -33,18 +41,15 @@ $green2: #008766;
 $blue1: #89c8fa;
 $blue2: #003a68;
 $purple: #9356dc;
+
 $gradient1: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0.15)
   ),
   linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+
 $gradient2: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-@mixin allCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 * {
   margin: 0;
@@ -53,6 +58,9 @@ $gradient2: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   text-decoration: none;
 }
 
+a {
+  color: $black;
+}
 li {
   list-style: none;
 }
@@ -62,20 +70,6 @@ body {
   font-size: 1rem;
 }
 
-button {
-  cursor: pointer;
-  border: none;
-}
-.ellipse {
-  width: 24px;
-  height: 24px;
-  font-size: 1rem;
-  left: 0px;
-  top: 0px;
-  background: $purple;
-  color: white;
-  border-radius: 100%;
-  position: absolute;
-  top: 25px;
-  left: -10px;
+img {
+  object-fit: cover;
 }
