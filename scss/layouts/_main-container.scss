@@ -1,0 +1,47 @@
+.main-container {
+  & img {
+    width: 100%;
+    height: 275px;
+    position: relative;
+  }
+
+  .menus-container {
+    background: $grey1;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  .main-container__img {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+  }
+  .menus-container__name {
+    position: relative;
+    @extend %all-center;
+    display: flex;
+  }
+
+  .menus-container__name h1 {
+    font-family: $font1;
+    font-weight: 200;
+    font-size: 1.75rem;
+  }
+  .menus-container__name i {
+    position: absolute;
+    font-size: 1rem;
+    top: 23%;
+    right: 5%;
+  }
+  .menus-container__title h2 {
+    font-family: $font3;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .menus-container__cards {
+    background: white;
+    height: 72px;
+    border-radius: 15px;
+    margin: 10px;
+  }
+}

@@ -23,9 +23,8 @@
   }
 
   .restaurants-section__cards-container {
-    position: relative;
   }
-
+  position: relative;
   .card-content__encart {
     @extend %all-center;
     background: $green1;
@@ -33,9 +32,8 @@
       color: $green2;
     }
     position: absolute;
-    top: 3%;
-    right: 20px;
-
+    top: 10%;
+    right: 3%;
     height: 29px;
     width: 80px;
     font-family: $font4;
@@ -48,24 +46,16 @@
   }
 
   .card-content__title {
-    position: relative;
-    display: grid;
-    grid-template-columns: 90% 10%fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "ttl vde"
-      "vde lab"
-      "stl vde";
+    display: flex;
+    flex-direction: column;
   }
   h4 {
-    grid-area: ttl;
   }
-  .fa-solid {
-    grid-area: lab;
+  .card-content__title i {
+    position: absolute;
   }
-  .subtitle {
+  .card-content__title p {
     font-family: $font3;
     font-size: 1.063rem;
-    grid-area: stl;
   }
 }

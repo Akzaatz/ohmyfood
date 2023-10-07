@@ -21,4 +21,10 @@ header {
   .header__loc i {
     padding-right: 10px;
   }
+
+  .header__pages {
+    @extend %all-center;
+    display: flex;
+    margin-bottom: 150px;
+  }
 }
