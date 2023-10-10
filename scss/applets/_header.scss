@@ -23,8 +23,13 @@ header {
   }
 
   .header__pages {
+    width: 100%;
     @extend %all-center;
     display: flex;
+    justify-content: space-around;
     margin-bottom: 150px;
+  }
+  .header__pages i {
+    padding-left: 10px;
   }
 }

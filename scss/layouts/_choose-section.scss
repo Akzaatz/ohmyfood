@@ -15,18 +15,20 @@
   .choose-section__restos {
     @extend %all-center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     position: relative;
     background: $grey2;
     width: 90%;
     height: 72.38px;
     border-radius: 20px;
     margin: 0 10px;
+    padding-left: 50px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     font-family: $font4;
   }
 
   .fa-solid {
+    padding-right: 50px;
     font-weight: 900;
     &.fa-list-ul,
     &.fa-mobile-screen-button {
@@ -46,16 +48,4 @@
     color: white;
     border-radius: 100%;
   }
-
-  /*.choose-section__restos__encart {
-    @include absolute-el(0, 0, 50px, 0, 0, 0);
-    background: $green1;
-    width: 10%;
-    height: 29px;
-  }
-
-  .choose-section__restos__encart p {
-    color: $green2;
-  }
-  */
 }

@@ -5,7 +5,9 @@
   h3 {
     @include h-title;
   }
-
+  .restaurants-section__cards-container {
+    position: relative;
+  }
   .restaurants-section__cards-container img {
     border-radius: 30px 30px 0 0;
     padding: 20px 10px 0;
@@ -21,40 +23,43 @@
     background: white;
     border-radius: 0 0 20px 20px;
   }
-
-  .restaurants-section__cards-container {
+  .restaurants-section__cards-container__cards {
+    position: relative;
   }
-  position: relative;
-  .card-content__encart {
-    @extend %all-center;
-    background: $green1;
-    &.card-content__encart p {
-      color: $green2;
-    }
-    position: absolute;
-    top: 10%;
-    right: 3%;
+  .restaurants-section__cards-container__cards__encart {
+    @include absolute-el(10%, 0%, 0%, 70%, 0%, 0%);
     height: 29px;
     width: 80px;
     font-family: $font4;
     font-size: 0.875rem;
+    @extend %all-center;
+    background: $green1;
+
+    &.restaurants-section__cards-container__cards__encart p {
+      color: $green2;
+    }
   }
 
   h4 {
+    padding-left: 30px;
+
     font-family: $font5;
     font-size: 1.125rem;
   }
 
-  .card-content__title {
+  .restaurants-section__cards-container__cards__content__title {
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
-  h4 {
-  }
-  .card-content__title i {
+
+  .restaurants-section__cards-container__cards__content__title i {
+    @include absolute-el(25%, 0%, 0%, 80%, 0%, 0%);
     position: absolute;
   }
-  .card-content__title p {
+  .restaurants-section__cards-container__cards__content__title p {
+    padding-left: 30px;
     font-family: $font3;
     font-size: 1.063rem;
   }
