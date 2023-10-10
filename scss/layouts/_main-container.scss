@@ -28,10 +28,28 @@
     font-size: 1.75rem;
     margin-right: 20px;
   }
-  .menus-container__name i {
-    padding-left: 10px;
-    font-size: 1.4rem;
+
+  .fa-regular {
+    @include absolute-el(24%, 0%, 0%, 80%, 0%, 0%);
+    position: absolute;
+    font-size: 1.5rem;
   }
+  .fa-solid {
+    cursor: pointer;
+    @include absolute-el(24%, 0%, 0%, 80%, 0%, 0%);
+    font-size: 1.5rem;
+    position: absolute;
+    opacity: 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.6 s ease-in-out;
+    background-image: $gradient1;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   .menus-container__title {
     flex-direction: column;
     display: flex;
@@ -57,17 +75,6 @@
     background: red;
   }
 
-  .menus-container__cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: white;
-    height: 72px;
-    border-radius: 15px;
-    margin: 10px;
-    gap: 5px;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  }
   .menus-container__cards_title {
     text-align: left;
     padding: 0 10px;
@@ -76,5 +83,26 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+  }
+  .menus-container__cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    height: 69px;
+    border-radius: 15px;
+    margin: 10px;
+    gap: 5px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  }
+
+  .menus-container__cards_content__price__anim {
+    @include absolute-el(0%, 0%, 0%, 100%, 0%, 0%);
+    border-radius: 0px 15px 15px 0px;
+    opacity: 0.8;
+    background: $green1;
+    width: 59px;
+    height: 69px;
   }
 }

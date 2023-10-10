@@ -6,6 +6,9 @@
     @include h-title;
   }
   .restaurants-section__cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
     position: relative;
   }
   .restaurants-section__cards-container img {
@@ -53,14 +56,28 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .restaurants-section__cards-container__cards__content__title i {
-    @include absolute-el(25%, 0%, 0%, 80%, 0%, 0%);
-    position: absolute;
-  }
   .restaurants-section__cards-container__cards__content__title p {
     padding-left: 30px;
     font-family: $font3;
     font-size: 1.063rem;
+  }
+  .fa-regular {
+    @include absolute-el(25%, 0%, 0%, 80%, 0%, 0%);
+    position: absolute;
+    font-size: 1.5rem;
+  }
+  .fa-solid {
+    @include absolute-el(25%, 0%, 0%, 80%, 0%, 0%);
+    font-size: 1.5rem;
+    position: absolute;
+    opacity: 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.4s ease-in-out;
+    background-image: $gradient1;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
