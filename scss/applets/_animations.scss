@@ -1,0 +1,23 @@
+#entrees {
+  opacity: 0;
+  animation: openfader 2s linear forwards;
+}
+
+#plats {
+  opacity: 0;
+  animation: openfader 2s linear 1s forwards;
+}
+
+#desserts {
+  opacity: 0;
+  animation: openfader 2s linear 1.5s forwards;
+}
+
+@keyframes openfader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -74,7 +74,7 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out linear;
     background-image: $gradient1;
     &:hover {
       opacity: 1;
