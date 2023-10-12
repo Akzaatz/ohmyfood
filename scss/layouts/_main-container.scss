@@ -17,6 +17,7 @@
     z-index: -1;
   }
   .menus-container__name {
+    position: relative;
     padding: 25px 10px 0;
     align-items: center;
     display: flex;
@@ -30,21 +31,20 @@
   }
 
   .fa-regular {
-    @include absolute-el(24%, 0%, 0%, 80%, 0%, 0%);
-    position: absolute;
+    @include absolute-el(50%, 0%, 0%, 80%, 0%, 0%);
+
     font-size: 1.5rem;
   }
   .fa-solid {
-    cursor: pointer;
-    @include absolute-el(24%, 0%, 0%, 80%, 0%, 0%);
+    @include absolute-el(50%, 0%, 0%, 80%, 0%, 0%);
     font-size: 1.5rem;
-    position: absolute;
+
     opacity: 0;
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text;
-    transition: all 0.6 s ease-in-out;
-    background-image: $gradient1;
+
+    transition: all 1s ease-in-out;
+    background-image: $gradient2;
     &:hover {
       opacity: 1;
     }
@@ -58,14 +58,17 @@
 
   .menus-container__title h2 {
     padding: 25px 10px 10px;
-    position: relative;
     text-align: left;
     font-family: $font3;
     font-size: 1rem;
     text-transform: uppercase;
   }
-
-  .menus-container__title h2 ::after {
+  .menus-container__title__style {
+    border-top: 3px solid $green1;
+    width: 10%;
+    padding-right: 10px;
+  }
+  /* .menus-container__title h2 ::after {
     content: "";
     position: absolute;
     top: 10%;
@@ -74,21 +77,37 @@
     height: 3px;
     background: red;
   }
-
+*/
   .menus-container__cards_title {
     text-align: left;
     padding: 0 10px;
+    overflow: hidden;
+    width: 70%;
+    transition: all ease-in-out 0.4s;
   }
+
+  .menus-container__cards_title__anim {
+    white-space: nowrap;
+    transition: all ease-in-out 0.4s;
+  }
+
+  .menus-container__cards:hover {
+    background: blue;
+    .menus-container__cards_title__anim {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
   .menus-container__cards_content {
     display: flex;
-    justify-content: space-between;
     padding: 0 10px;
   }
   .menus-container__cards {
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     background: white;
     height: 69px;
     border-radius: 15px;
@@ -97,7 +116,12 @@
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   }
 
-  .menus-container__cards_content__price__anim {
+  .menus-container__cards_content__price {
+    height: 69px;
+    display: flex;
+    align-items: center;
+  }
+  /*.menus-container__cards_content__price__anim {
     @include absolute-el(0%, 0%, 0%, 100%, 0%, 0%);
     border-radius: 0px 15px 15px 0px;
     opacity: 0.8;
@@ -105,4 +129,5 @@
     width: 59px;
     height: 69px;
   }
+  */
 }
