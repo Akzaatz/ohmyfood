@@ -1,19 +1,19 @@
 #entrees {
   opacity: 0;
-  animation: openfader 2s linear forwards;
+  animation: menusfader 2s linear forwards;
 }
 
 #plats {
   opacity: 0;
-  animation: openfader 2s linear 1s forwards;
+  animation: menusfader 2s linear 1s forwards;
 }
 
 #desserts {
   opacity: 0;
-  animation: openfader 2s linear 1.5s forwards;
+  animation: menusfader 2s linear 1.5s forwards;
 }
 
-@keyframes openfader {
+@keyframes menusfader {
   from {
     opacity: 0;
   }

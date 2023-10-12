@@ -5,17 +5,18 @@
     @include h-title;
   }
   nav {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 40px;
   }
 
   a {
     @extend %all-center;
   }
+
   .choose-section__restos {
-    @extend %all-center;
+    align-items: center;
     display: flex;
-    justify-content: flex-start;
     position: relative;
     background: $grey2;
     width: 90%;
@@ -26,15 +27,18 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     font-family: $font4;
   }
+  .choose-section__restos p {
+    margin-left: 50px;
+  }
 
   .fa-solid {
-    padding-right: 50px;
-    font-weight: 900;
     &.fa-list-ul,
     &.fa-mobile-screen-button {
       color: $grey3;
+      position: relative;
     }
     &.fa-store {
+      position: relative;
       color: $purple;
     }
   }
