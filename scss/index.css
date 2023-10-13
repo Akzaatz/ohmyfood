@@ -276,10 +276,10 @@ header .header__pages i {
 }
 .restaurants-section .restaurants-section__cards-container__cards__encart {
   position: absolute;
-  top: 10%;
-  right: 0%;
+  top: 20%;
+  right: 30%;
   bottom: 0%;
-  left: 40%;
+  left: 80%;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   height: 29px;
@@ -371,7 +371,6 @@ header .header__pages i {
 .main-container img {
   width: 100%;
   height: 275px;
-  position: relative;
 }
 .main-container .menus-container {
   background: #ebebea;
@@ -393,13 +392,7 @@ header .header__pages i {
   display: -ms-flexbox;
   display: flex;
 }
-.main-container .menus-container__name h1 {
-  font-family: Shrikhand;
-  font-weight: 200;
-  font-size: 1.75rem;
-  margin-right: 20px;
-}
-.main-container .fa-regular {
+.main-container .menus-container__name .fa-regular {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -409,7 +402,7 @@ header .header__pages i {
           transform: translate(0%, 0%);
   font-size: 1.5rem;
 }
-.main-container .fa-solid {
+.main-container .menus-container__name .fa-solid {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -426,8 +419,14 @@ header .header__pages i {
   transition: all 1s ease-in-out;
   background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 }
-.main-container .fa-solid:hover {
+.main-container .menus-container__name .fa-solid:hover {
   opacity: 1;
+}
+.main-container .menus-container__name h1 {
+  font-family: Shrikhand;
+  font-weight: 200;
+  font-size: 1.75rem;
+  margin-right: 20px;
 }
 .main-container .menus-container__title {
   -webkit-box-orient: vertical;

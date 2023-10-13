@@ -30,7 +30,7 @@
     position: relative;
   }
   .restaurants-section__cards-container__cards__encart {
-    @include absolute-el(10%, 0%, 0%, 40%, 0%, 0%);
+    @include absolute-el(20%, 30%, 0%, 80%, 0%, 0%);
     height: 29px;
     width: 80px;
     font-family: $font4;
