@@ -1,0 +1,97 @@
+.loader {
+    margin: auto;
+    opacity: 1;
+    width: 155px;
+    height: 155px;
+    position: relative;
+    animation: logofader 2s linear 1.5s forwards;
+}
+
+@keyframes logofader {
+    0% {
+        transform: opacity(0);
+    }
+
+    100% {
+        transform: opacity(100%);
+    }
+}
+
+.loader div {
+    position: absolute;
+}
+
+@keyframes animcercle {
+    0% {
+        transform: rotate(0) deg;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle1 {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    border: 5px solid #008766;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: animcercle 2s linear forwards;
+}
+
+.circle2 {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+    border: 5px solid #99e2d0;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    animation: animcercle 1s linear reverse forwards;
+}
+
+.log__anim {
+    width: 104px;
+    height: 128px;
+    left: 42%;
+    opacity: 0;
+    top: 70%;
+    margin: -47px 0px 0px -52px;
+    font-size: 2rem;
+    animation: logofader 2s linear 1.5s forwards;
+}
+
+.cercle2 {
+    left: 50%;
+    top: 50%;
+    margin: -55px 0px 0px -55px;
+}
+
+.circle3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px dotted #008766;
+    animation: animcercle 2s linear forwards;
+}
+
+.circle4 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px dotted #99e2d0;
+    animation: animcercle 1s linear reverse forwards;
+}
+
+.cercle5 {
+    width: 90px;
+    height: 90px;
+    left: 50%;
+    top: 50%;
+    margin: -45px 0px 0px -45px;
+}

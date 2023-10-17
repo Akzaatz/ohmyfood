@@ -5,12 +5,14 @@
   h3 {
     @include h-title;
   }
+
   .restaurants-section__cards-container {
     display: flex;
     flex-direction: column;
     gap: 35px;
     position: relative;
   }
+
   .restaurants-section__cards-container img {
     border-radius: 30px 30px 0 0;
     padding: 20px 10px 0;
@@ -26,22 +28,27 @@
     background: white;
     border-radius: 0 0 20px 20px;
   }
+
   .restaurants-section__cards-container__cards {
     position: relative;
-  }
-  .restaurants-section__cards-container__cards__encart {
-    @include absolute-el(20%, 30%, 0%, 80%, 0%, 0%);
-    height: 29px;
-    width: 80px;
-    font-family: $font4;
-    font-size: 0.875rem;
-    @extend %all-center;
-    background: $green1;
 
-    &.restaurants-section__cards-container__cards__encart p {
-      color: $green2;
+    .restaurants-section__cards-container__cards__encart {
+      position: absolute;
+      @include absolute-el(10%, 5%, 0, auto, 0, 0);
+      height: 29px;
+      width: 80px;
+      font-family: $font4;
+      font-size: 0.875rem;
+      @extend %all-center;
+      background: $green1;
+
+      &.restaurants-section__cards-container__cards__encart p {
+        color: $green2;
+      }
     }
   }
+
+
 
   h4 {
     padding-left: 30px;
@@ -56,16 +63,19 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .restaurants-section__cards-container__cards__content__title p {
     padding-left: 30px;
     font-family: $font3;
     font-size: 1.063rem;
   }
+
   .fa-regular {
     @include absolute-el(25%, 0%, 0%, 80%, 0%, 0%);
     position: absolute;
     font-size: 1.5rem;
   }
+
   .fa-solid {
     @include absolute-el(25%, 0%, 0%, 80%, 0%, 0%);
     font-size: 1.5rem;
@@ -73,8 +83,9 @@
     opacity: 0;
     color: transparent;
     background-clip: text;
-    transition: all 1s ease-in-out linear;
+    transition: all 1s ease-in-out;
     background-image: $gradient2;
+
     &:hover {
       opacity: 1;
     }
