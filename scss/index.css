@@ -62,8 +62,8 @@ img {
 }
 .main-container__loader .loader {
   margin: auto;
-  width: 155px;
-  height: 155px;
+  width: 135px;
+  height: 135px;
   position: relative;
   -webkit-animation: logofader 2s linear 1.5s;
           animation: logofader 2s linear 1.5s;
@@ -73,8 +73,8 @@ img {
 }
 @-webkit-keyframes animcercle {
   0% {
-    -webkit-transform: rotate(0) deg;
-            transform: rotate(0) deg;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -83,8 +83,8 @@ img {
 }
 @keyframes animcercle {
   0% {
-    -webkit-transform: rotate(0) deg;
-            transform: rotate(0) deg;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -92,8 +92,8 @@ img {
   }
 }
 .main-container__loader .circle1 {
-  width: 155px;
-  height: 155px;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
   -webkit-filter: blur(3px);
           filter: blur(3px);
