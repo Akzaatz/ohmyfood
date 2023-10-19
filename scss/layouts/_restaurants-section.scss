@@ -2,8 +2,12 @@
   background: $grey2;
   padding-bottom: 60px;
 
-  h3 {
-    @include h-title;
+  @media screen and (min-width: 1224px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
 
   .restaurants-section__cards-container {
@@ -11,6 +15,37 @@
     flex-direction: column;
     gap: 35px;
     position: relative;
+
+    @media screen and (min-width: 1224px) {
+
+      max-width: 1080px;
+      display: grid;
+      gap: 90px;
+
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "lpg lne"
+        "alf lds";
+
+      #lne {
+        grid-area: lne;
+      }
+
+      #alf {
+        grid-area: alf;
+      }
+
+      #lds {
+        grid-area: lds;
+      }
+    }
+  }
+
+  h3 {
+    @include h-title;
+    grid-area: ttl;
+
   }
 
   .restaurants-section__cards-container img {
@@ -46,9 +81,11 @@
         color: $green2;
       }
     }
+
+    @media screen and (min-width: 1224px) {
+      width: 490px;
+    }
   }
-
-
 
   h4 {
     padding-left: 30px;

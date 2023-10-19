@@ -1,13 +1,51 @@
 .choose-section {
   margin-bottom: 60px;
+  position: relative;
+
+
 
   h2 {
-    @include h-title;
+
+    padding-bottom: 0;
+    font-family: $font5;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 30px 20px 0;
+
+    @media screen and (min-width: 1224px) {
+      max-width: 1040px;
+
+      .choose-section__restos {
+        position: relative;
+      }
+    }
+
+
   }
+
   nav {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+
+
+    @media screen and (min-width: 1224px) {
+      display: grid;
+      grid-template-columns: 25% 25% 25%;
+      grid-template-rows: 1fr 1fr;
+      justify-content: center;
+      gap: 20px;
+      grid-template-areas:
+        "ttl ttl ttl"
+        "cho com deg";
+
+      h2 {
+        grid-area: ttl;
+      }
+
+      justify-content: center;
+    }
   }
 
   a {
@@ -26,17 +64,25 @@
     padding-left: 50px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     font-family: $font4;
+
+    @media screen and (min-width: 1224px) {
+      width: 335px;
+    }
+
   }
+
   .choose-section__restos p {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .fa-solid {
+
     &.fa-list-ul,
     &.fa-mobile-screen-button {
       color: $grey3;
       position: relative;
     }
+
     &.fa-store {
       position: relative;
       color: $purple;
