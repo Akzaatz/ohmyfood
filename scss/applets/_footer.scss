@@ -2,23 +2,30 @@ footer {
   background: $grey3;
   color: white;
   display: grid;
+  align-items: center;
   justify-items: start;
   grid-template-columns: 1fr;
   grid-template-rows: 30% 70%;
-  padding: 30px;
+  padding: 0 30px;
+
+  h5 {
+    font-family: $font1;
+    font-size: 1.125rem;
+    margin: 30px 0 20px;
+  }
 
   @media screen and (min-width: 1224px) {
+    padding-top: 30px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    align-items: flex-start;
-    gap: 150px;
+    align-items: baseline;
+    gap: 50px;
     height: 114px;
 
     h5 {
-      margin-right: 20px;
+      margin: 0 70px 0 90px;
     }
-
   }
 
   .partnership {
@@ -26,26 +33,28 @@ footer {
   }
 
   .partnership ul {
+    line-height: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-    padding-bottom: 50px;
+
+    padding-bottom: 20px;
+
+
+    .partnership__visu {
+      margin-right: 25px;
+    }
+
+
 
     #ustensils,
     #handshake {
       padding-right: 10px;
     }
 
-
-
     @media screen and (min-width: 1224px) {
       flex-direction: row;
-
-
     }
-
-
   }
 }

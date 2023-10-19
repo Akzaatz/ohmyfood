@@ -9,6 +9,37 @@
 
     animation: fadeOut 1s linear 1s forwards;
 
+    &::before {
+        content: "";
+        z-index: 3;
+        position: fixed;
+        opacity: 0.5;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $gradient1;
+
+        animation: globalAnim 3s ease-in-out forwards;
+        animation-delay: 0.9s;
+
+        @keyframes globalAnim {
+            100% {
+                opacity: 0;
+                z-index: -1;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
     .loader {
 
         margin: auto;
