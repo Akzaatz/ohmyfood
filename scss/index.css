@@ -35,7 +35,6 @@ li {
 }
 
 body {
-  height: 100vh;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -51,9 +50,9 @@ body {
 body::before {
   content: "";
   z-index: 3;
-  position: absolute;
+  position: fixed;
   opacity: 0.5;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
@@ -510,10 +509,11 @@ header .header__pages i {
   gap: 35px;
   position: relative;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1224px) {
   .restaurants-section .restaurants-section__cards-container {
     max-width: 1080px;
     display: grid;
+    justify-items: center;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-template-areas: "ttl ttl" "lpg lne" "alf lds";

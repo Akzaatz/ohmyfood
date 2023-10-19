@@ -67,7 +67,7 @@ li {
 }
 
 body {
-  height: 100vh;
+
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -80,9 +80,9 @@ body {
   &::before {
     content: "";
     z-index: 3;
-    position: absolute;
+    position: fixed;
     opacity: 0.5;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -96,7 +96,6 @@ body {
         opacity: 0;
         z-index: -1;
       }
-
     }
   }
 
