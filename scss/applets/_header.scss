@@ -1,7 +1,6 @@
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   .header__logo {
     justify-content: center;
@@ -9,9 +8,14 @@ header {
     padding: 15px;
   }
 
+  .header__logo img {
+    width: 50%;
+
+
+
+  }
 
   .header__loc {
-    width: 100%;
     @extend %all-center;
     background: $grey1;
     display: flex;
@@ -23,7 +27,7 @@ header {
   }
 
   .header__pages {
-
+    width: 100%;
     @extend %all-center;
     display: flex;
     justify-content: space-around;

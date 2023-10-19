@@ -35,6 +35,7 @@ li {
 }
 
 body {
+  height: 100vh;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -47,6 +48,33 @@ body {
   font-family: Roboto-Medium;
   font-size: 1rem;
 }
+body::before {
+  content: "";
+  z-index: 3;
+  position: absolute;
+  opacity: 0.5;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  -webkit-animation: globalAnim 3s ease-in-out forwards;
+          animation: globalAnim 3s ease-in-out forwards;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes globalAnim {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes globalAnim {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 
 img {
   -o-object-fit: cover;
@@ -54,17 +82,13 @@ img {
 }
 
 .main-container__loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
+  z-index: 15;
+  margin: auto;
+  position: absolute;
+  top: 380px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   -webkit-animation: fadeOut 1s linear 1s forwards;
           animation: fadeOut 1s linear 1s forwards;
 }
@@ -288,7 +312,7 @@ button:hover {
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
 }
 
-.restaurants-section .restaurants-section__cards-container__cards .restaurants-section__cards-container__cards__encart, .choose-section a, header .header__pages, header .header__loc {
+.main-container, .restaurants-section .restaurants-section__cards-container__cards .restaurants-section__cards-container__cards__encart, .choose-section a, header .header__pages, header .header__loc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,9 +332,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 header .header__logo {
   -webkit-box-pack: center;
@@ -321,8 +342,10 @@ header .header__logo {
   display: flex;
   padding: 15px;
 }
+header .header__logo img {
+  width: 50%;
+}
 header .header__loc {
-  width: 100%;
   background: #ebebea;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,6 +356,7 @@ header .header__loc i {
   padding-right: 10px;
 }
 header .header__pages {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,26 +510,26 @@ header .header__pages i {
   gap: 35px;
   position: relative;
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 780px) {
   .restaurants-section .restaurants-section__cards-container {
     max-width: 1080px;
     display: grid;
-    gap: 90px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "lpg lne" "alf lds";
-  }
-  .restaurants-section .restaurants-section__cards-container #lne {
-    grid-area: lne;
-  }
-  .restaurants-section .restaurants-section__cards-container #alf {
-    grid-area: alf;
-  }
-  .restaurants-section .restaurants-section__cards-container #lds {
-    grid-area: lds;
+    grid-template-rows: auto;
+    grid-template-areas: "ttl ttl" "lpg lne" "alf lds";
   }
 }
+.restaurants-section .restaurants-section__cards-container #lne {
+  grid-area: lne;
+}
+.restaurants-section .restaurants-section__cards-container #alf {
+  grid-area: alf;
+}
+.restaurants-section .restaurants-section__cards-container #lds {
+  grid-area: lds;
+}
 .restaurants-section h3 {
+  padding-bottom: 0;
   font-family: Roboto-Bold;
   font-size: 1.5rem;
   text-align: left;
@@ -608,24 +632,32 @@ header .header__pages i {
   opacity: 1;
 }
 
-img {
+.main-container img {
   width: 100%;
 }
-
-.menus-container {
+.main-container .menus-container {
   background: #ebebea;
   border-radius: 40px 40px 0px 0px;
   margin-top: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
-
-.main-container__img {
+.main-container .main-container__img {
   width: 100%;
   position: absolute;
   top: 70px;
   z-index: -1;
 }
-
-.menus-container__name {
+.main-container .main-container__img img {
+  height: 383px;
+}
+.main-container .menus-container__name {
   position: relative;
   padding: 25px 10px 0;
   -webkit-box-align: center;
@@ -635,7 +667,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-.menus-container__name .fa-regular {
+.main-container .menus-container__name .fa-regular {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -645,7 +677,7 @@ img {
           transform: translate(0%, 0%);
   font-size: 1.5rem;
 }
-.menus-container__name .fa-solid {
+.main-container .menus-container__name .fa-solid {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -662,18 +694,16 @@ img {
   transition: all 1s ease-in-out;
   background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 }
-.menus-container__name .fa-solid:hover {
+.main-container .menus-container__name .fa-solid:hover {
   opacity: 1;
 }
-
-.menus-container__name h1 {
+.main-container .menus-container__name h1 {
   font-family: Shrikhand;
   font-weight: 200;
   font-size: 1.75rem;
   margin-right: 20px;
 }
-
-.menus-container__title {
+.main-container .menus-container__title {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -683,8 +713,7 @@ img {
   display: flex;
   gap: 5px;
 }
-
-.menus-container__title h2 {
+.main-container .menus-container__title h2 {
   padding: 25px 10px 0 10px;
   text-align: left;
   font-family: Roboto-light;
@@ -692,7 +721,7 @@ img {
   text-transform: uppercase;
   position: relative;
 }
-.menus-container__title h2::before {
+.main-container .menus-container__title h2::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -700,8 +729,7 @@ img {
   height: 3px;
   width: 35px;
 }
-
-.menus-container__cards_title {
+.main-container .menus-container__cards_title {
   line-height: 25px;
   text-align: left;
   padding: 0 10px;
@@ -710,17 +738,15 @@ img {
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
-.menus-container__cards_title h3 {
+.main-container .menus-container__cards_title h3 {
   font-size: 1.125rem;
 }
-
-.menus-container__cards_title__text {
+.main-container .menus-container__cards_title__text {
   white-space: nowrap;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
-
-.menus-container__cards {
+.main-container .menus-container__cards {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,26 +766,26 @@ img {
   -webkit-box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
-.menus-container__cards .menus-container__cards_content__price__anim {
+.main-container .menus-container__cards .menus-container__cards_content__price__anim {
   background: #99e2d0;
   width: 100%;
 }
-.menus-container__cards:hover .menus-container__cards_content__price {
+.main-container .menus-container__cards:hover .menus-container__cards_content__price {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-.menus-container__cards:hover .menus-container__cards_title__text {
+.main-container .menus-container__cards:hover .menus-container__cards_title__text {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menus-container__cards .menus-container__cards_content {
+.main-container .menus-container__cards .menus-container__cards_content {
   height: 100%;
 }
-.menus-container__cards .menus-container__cards_content p {
+.main-container .menus-container__cards .menus-container__cards_content p {
   font-family: Roboto-Bold;
   font-size: 0.94rem;
 }
-.menus-container__cards .menus-container__cards_content__price {
+.main-container .menus-container__cards .menus-container__cards_content__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,10 +799,10 @@ img {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-.menus-container__cards .menus-container__cards_content__price .fa-circle-check {
+.main-container .menus-container__cards .menus-container__cards_content__price .fa-circle-check {
   color: white;
 }
-.menus-container__cards .menus-container__cards_content__price span {
+.main-container .menus-container__cards .menus-container__cards_content__price span {
   margin-left: 30px;
   border-radius: 0 15px 15px 0;
   padding: 0 15px;
