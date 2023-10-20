@@ -2,8 +2,6 @@
   background: $grey2;
   padding-bottom: 60px;
 
-
-
   @media screen and (min-width: 1224px) {
     display: flex;
     flex-direction: column;
@@ -11,14 +9,15 @@
     align-items: center;
   }
 
-
-
   .restaurants-section__cards-container {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 5px;
     position: relative;
 
+    .restaurants-section__cards-container__cards {
+      margin-bottom: 10px;
+    }
 
     @media screen and (min-width: 1224px) {
       max-width: 1080px;
@@ -31,8 +30,12 @@
         "lpg lne"
         "alf lds";
       grid-column-gap: 100px;
+      grid-row-gap: 5px;
     }
 
+    #lpg {
+      grid-area: lpg;
+    }
 
     #lne {
       grid-area: lne;
@@ -48,12 +51,11 @@
   }
 
   h3 {
-    padding-bottom: 0;
     @include h-title;
     grid-area: ttl;
     padding-left: 10px;
+    padding-bottom: 0;
   }
-
 
   .restaurants-section__cards-container img {
     border-radius: 40px 40px 0 0;
@@ -73,6 +75,8 @@
 
   .restaurants-section__cards-container__cards {
     position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 45px;
 
     .restaurants-section__cards-container__cards__encart {
       position: absolute;
@@ -93,8 +97,6 @@
       width: 490px;
     }
   }
-
-
 
   h4 {
     padding-left: 30px;

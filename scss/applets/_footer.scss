@@ -14,47 +14,55 @@ footer {
     margin: 30px 0 20px;
   }
 
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+
+    #ustensils,
+    #handshake {
+      margin-right: 10px;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
   @media screen and (min-width: 1224px) {
-    padding-top: 30px;
+    padding: 30px 0 20px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: flex-end;
     gap: 50px;
     height: 114px;
 
     h5 {
-      margin: 0 70px 0 90px;
-    }
-  }
-
-  .partnership {
-    display: flex;
-  }
-
-  .partnership ul {
-    line-height: 30px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    padding-bottom: 20px;
-
-
-    .partnership__visu {
-      margin-right: 25px;
+      margin: 0 50px 0 20px;
     }
 
-
-
-    #ustensils,
-    #handshake {
-      padding-right: 10px;
-    }
-
-    @media screen and (min-width: 1224px) {
+    .partnership ul {
+      line-height: 30px;
+      position: relative;
+      display: flex;
       flex-direction: row;
+      align-items: flex-start;
+
+      .partnership__visu {
+        margin-right: 20px;
+      }
+
+      li {
+        margin-right: 20px;
+      }
+
+      #ml {
+        margin-left: 50px;
+      }
+
     }
   }
+
 }

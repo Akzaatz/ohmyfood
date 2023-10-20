@@ -56,6 +56,7 @@ $gradient2: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+
 }
 
 a {
@@ -75,6 +76,7 @@ body {
   text-align: center;
   font-family: $font4;
   font-size: 1rem;
+  box-shadow: 0px 2px 10px rgba(59, 59, 59, 0.25);
 }
 
 img {
