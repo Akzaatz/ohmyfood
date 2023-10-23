@@ -986,10 +986,10 @@ header .header__loc i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 60%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 90px;
   height: 100%;
   -webkit-transform: translateX(65px);
           transform: translateX(65px);
@@ -997,13 +997,13 @@ header .header__loc i {
   transition: all 0.8s;
 }
 .main-container .menus-container__cards .menus-container__cards_content__price .fa-circle-check {
+  opacity: 1;
   color: white;
 }
 .main-container .menus-container__cards .menus-container__cards_content__price span {
-  margin-left: 30px;
   border-radius: 0 15px 15px 0;
   padding: 0 15px;
-  width: 100%;
+  width: 115%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

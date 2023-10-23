@@ -182,6 +182,8 @@
     gap: 5px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 
+
+
     .menus-container__cards_content__price__anim {
       background: $green1;
       width: 100%;
@@ -209,21 +211,24 @@
 
     .menus-container__cards_content__price {
       display: flex;
-      align-items: flex-end;
-      width: 60%;
+      align-items: baseline;
+      width: 90px;
       height: 100%;
       transform: translateX(65px);
       transition: all 0.8s;
 
+
+
       .fa-circle-check {
+        opacity: 1;
         color: white;
       }
 
       span {
-        margin-left: 30px;
+
         border-radius: 0 15px 15px 0;
         padding: 0 15px;
-        width: 100%;
+        width: 115%;
         height: 100%;
         display: flex;
         justify-content: center;
