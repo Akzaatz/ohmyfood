@@ -1,24 +1,15 @@
 .main-container {
-
-
-  @media screen and (min-width:768px) {
-
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
     z-index: 1;
-
-    footer .footer {
-      display: none;
-    }
   }
 
-
-
-
-
-  @extend %all-center;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .menus-container {
+    position: relative;
     background: $grey2;
     border-radius: 40px 40px 0px 0px;
     margin-top: 63px;
@@ -39,77 +30,103 @@
       max-width: 1440px;
       height: 375px;
 
-      @media screen and (min-width:768px) {
+      @media screen and (min-width: 768px) {
         height: 383px;
-
       }
     }
   }
 
+  // Titre de la Fiche
   .menus-container__name {
     position: relative;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+
+    h1 {
+      font-family: $font1;
+      font-weight: 200;
+      font-size: 1.75rem;
+      margin-right: 20px;
+
+      @media screen and (min-width: 768px) {
+        padding-bottom: 190px;
+      }
+    }
+
     padding: 25px 10px 0;
     align-items: center;
     display: flex;
 
+    // position des coeurs
+    .menus-container__name__heart {
+      display: flex;
+    }
+
     .fa-regular,
     .fa-solid {
-      @include absolute-el(50%, 0%, 0%, 80%, 0%, 0%);
+      font-size: 1.5rem;
+      @include absolute-el(33px, 10px, auto, auto, auto, auto);
 
       @media screen and (min-width: 768px) {
-        @include absolute-el(10%, 0%, 0%, 80%, 0%, 0%);
+        @include absolute-el(33px, auto, auto, auto, auto, auto);
       }
-
-      font-size: 1.5rem;
-    }
-
-    .fa-solid {
-      font-size: 1.5rem;
-
-      opacity: 0;
-      color: transparent;
-      background-clip: text;
-
-      transition: all 1s ease-in-out;
-      background-image: $gradient2;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    @media screen and (min-width:768px) {
-      flex-direction: column;
-
     }
   }
 
-  .menus-container__name h1 {
-    font-family: $font1;
-    font-weight: 200;
-    font-size: 1.75rem;
-    margin-right: 20px;
+  .fa-solid {
+    font-size: 1.5rem;
 
-    @media screen and (min-width: 768px) {
-      padding-bottom: 54px;
+    opacity: 0;
+    color: transparent;
+    background-clip: text;
+
+    transition: 0.8s ease-in-out;
+    background-image: $gradient2;
+
+    &:hover {
+      opacity: 1;
     }
   }
 
   .menus-container__name__logo {
+    position: relative;
     width: 100%;
-
-    width: 1440px;
+    max-width: 1440px;
     height: 97px;
     background: $white;
     box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.25);
     display: none;
-    z-index: 55;
-    border-right-style: red;
+    z-index: 1;
+
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    img {
+      width: 15%;
+    }
+
+    .fas {
+
+      font-size: 1rem;
+      @include absolute-el(auto, auto, auto, 10px, auto, auto);
+    }
 
     @media screen and (min-width: 768px) {
       display: flex;
     }
   }
+
+
 
   .menus-container__title {
     flex-direction: column;
@@ -154,8 +171,6 @@
   }
 
   .menus-container__cards {
-    position: relative;
-
     display: flex;
     align-items: center;
     justify-content: space-between;

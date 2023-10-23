@@ -3,7 +3,7 @@
   position: relative;
 
 
-  @media screen and (min-width:1224px) {
+  @media screen and (min-width:768px) {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
     text-align: left;
     padding: 30px 20px 0;
 
-    @media screen and (min-width: 1224px) {
+    @media screen and (min-width: 768px) {
       max-width: 1040px;
 
       .choose-section__restos {
@@ -37,7 +37,7 @@
 
 
 
-    @media screen and (min-width: 1224px) {
+    @media screen and (min-width: 768px) {
 
       display: grid;
       grid-template-columns: 33% 33% 33%;
@@ -72,8 +72,13 @@
     padding-left: 50px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     font-family: $font4;
+    transition: 0.8s linear;
 
-    @media screen and (min-width: 1224px) {
+    &:active {
+      transform: scale(1.05);
+    }
+
+    @media screen and (min-width: 768px) {
       width: 335px;
     }
 
