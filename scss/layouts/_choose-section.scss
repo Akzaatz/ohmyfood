@@ -3,7 +3,7 @@
   position: relative;
 
 
-  @media screen and (min-width:880px) {
+  @media screen and (min-width:1200px) {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
     text-align: left;
     padding: 30px 20px 0;
 
-    @media screen and (min-width: 880px) {
+    @media screen and (min-width: 1200px) {
 
 
       .choose-section__restos {
@@ -37,7 +37,7 @@
 
 
 
-    @media screen and (min-width: 880px) {
+    @media screen and (min-width: 1200px) {
 
       display: grid;
       grid-template-columns: 33% 33% 33%;
@@ -78,7 +78,7 @@
       transform: scale(1.05);
     }
 
-    @media screen and (min-width: 880px) {
+    @media screen and (min-width: 1200px) {
       width: 335px;
     }
 
