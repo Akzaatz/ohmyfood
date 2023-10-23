@@ -1,5 +1,5 @@
 .main-container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 880px) {
     flex-direction: column;
     z-index: 1;
   }
@@ -30,7 +30,7 @@
       max-width: 1440px;
       height: 375px;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 880px) {
         height: 383px;
       }
     }
@@ -40,7 +40,7 @@
   .menus-container__name {
     position: relative;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 880px) {
       justify-content: center;
     }
 
@@ -50,7 +50,7 @@
       font-size: 1.75rem;
       margin-right: 20px;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 880px) {
         padding-bottom: 190px;
       }
     }
@@ -69,7 +69,7 @@
       font-size: 1.5rem;
       @include absolute-el(33px, 10px, auto, auto, auto, auto);
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 880px) {
         @include absolute-el(33px, auto, auto, auto, auto, auto);
       }
     }
@@ -101,7 +101,7 @@
     z-index: 1;
 
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 880px) {
       position: absolute;
       top: 450px;
       display: flex;
@@ -121,7 +121,7 @@
       @include absolute-el(auto, auto, auto, 10px, auto, auto);
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 880px) {
       display: flex;
     }
   }
@@ -184,10 +184,7 @@
 
 
 
-    .menus-container__cards_content__price__anim {
-      background: $green1;
-      width: 100%;
-    }
+
 
     &:hover {
       .menus-container__cards_content__price {
@@ -204,8 +201,10 @@
       height: 100%;
 
       p {
+
         font-family: $font5;
         font-size: 0.94rem;
+
       }
     }
 
@@ -218,6 +217,12 @@
       transition: all 0.8s;
 
 
+      .menus-container__cards_content__price__anim {
+
+        background: $green1;
+        width: 100%;
+
+      }
 
       .fa-circle-check {
         opacity: 1;
@@ -226,9 +231,9 @@
 
       span {
         border-radius: 0 15px 15px 0;
-        margin-left: 10px;
+
         padding: 0 15px;
-        width: 115%;
+        width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
