@@ -344,6 +344,7 @@ header {
           flex-direction: column;
 }
 header .header__logo {
+  height: 63px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -351,6 +352,10 @@ header .header__logo {
   display: -ms-flexbox;
   display: flex;
   padding: 15px;
+}
+header .header__logo__arrow i {
+  position: absolute;
+  left: 20px;
 }
 header .header__logo img {
   max-width: 200px;
@@ -393,6 +398,7 @@ header .header__loc i {
 }
 
 .header__pages {
+  height: 63px;
   width: 100%;
   margin-bottom: 150px;
 }
@@ -402,10 +408,6 @@ header .header__loc i {
 .header__pages .header__pages__logo img {
   padding-top: 20px;
   width: 50%;
-}
-.header__pages .header__pages__logo .header__pages__logo__arrow i {
-  position: absolute;
-  left: 20px;
 }
 
 .search-section {
@@ -820,8 +822,8 @@ header .header__loc i {
   opacity: 1;
 }
 .main-container .fa-solid:active {
-  -webkit-transform: scale(2.05);
-          transform: scale(2.05);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .main-container .menus-container__title {
   -webkit-box-orient: vertical;

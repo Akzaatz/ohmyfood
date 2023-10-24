@@ -1,12 +1,22 @@
+//================ Header Index================
 header {
-
   display: flex;
+
   flex-direction: column;
 
   .header__logo {
+    height: 63px;
     justify-content: center;
     display: flex;
     padding: 15px;
+  }
+
+
+  .header__logo__arrow {
+    i {
+      position: absolute;
+      left: 20px;
+    }
   }
 
   .header__logo img {
@@ -44,11 +54,15 @@ header {
   }
 }
 
+//================= Header Pages ===================
 .header__pages {
+
+  height: 63px;
   width: 100%;
   margin-bottom: 150px;
 
   .header__pages__logo {
+
     @extend %all-center;
     position: relative;
 
@@ -57,12 +71,6 @@ header {
       width: 50%;
     }
 
-    .header__pages__logo__arrow {
-      i {
-        position: absolute;
-        left: 20px;
-      }
-    }
 
   }
 
