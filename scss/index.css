@@ -1021,10 +1021,13 @@ footer ul #handshake {
   footer .partnership ul .partnership__visu {
     margin-right: 20px;
   }
+  footer .partnership ul a {
+    color: #ffffff;
+  }
   footer .partnership ul li {
     margin-right: 2px;
   }
-  footer .partnership ul li:nth-child(3) {
-    margin-left: 50px;
+  footer .partnership ul li:nth-child(2) {
+    margin-right: 120px;
   }
 }/*# sourceMappingURL=index.css.map */

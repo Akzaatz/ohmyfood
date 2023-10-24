@@ -50,12 +50,17 @@ footer {
         margin-right: 20px;
       }
 
+      a {
+        color: $white;
+      }
+
       li {
+
         margin-right: 2px;
       }
 
-      li:nth-child(3) {
-        margin-left: 50px;
+      li:nth-child(2) {
+        margin-right: 120px;
 
       }
     }
