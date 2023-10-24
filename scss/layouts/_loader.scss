@@ -5,7 +5,7 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-
+    //=========Fader page index=============
     animation: fadeOut 1s linear 1s forwards;
 
     &::before {
@@ -31,15 +31,7 @@
         }
     }
 
-
-
-
-
-
-
-
-
-
+    //============Anim Cercles=======================
     .loader {
 
         margin: auto;
@@ -68,8 +60,9 @@
         width: 135px;
         height: 135px;
         border-radius: 50%;
-        filter: blur(3px);
-        border: 5px solid #008766;
+        border: 5px solid transparent;
+        background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+        opacity: 0.2;
         border-top-color: transparent;
         border-bottom-color: transparent;
         animation: animcercle 2s linear;
@@ -78,7 +71,7 @@
     .circle2 {
         width: 110px;
         height: 110px;
-        filter: blur(2px);
+
         border-radius: 50%;
         border: 5px solid #99e2d0;
         border-right-color: transparent;
@@ -94,7 +87,7 @@
         left: 48%;
         opacity: 1;
         top: 70%;
-        margin: -47px 0px 0px -52px;
+        margin: -47px 0px 0px -56px;
         font-size: 2rem;
     }
 
@@ -146,7 +139,7 @@
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        filter: blur(2px);
+
         border: 5px dotted #008766;
         animation: animcercle 2s linear;
     }
@@ -155,7 +148,7 @@
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        filter: blur(2px);
+
         border: 5px dotted #99e2d0;
 
         animation: animcercle 1s linear reverse;
