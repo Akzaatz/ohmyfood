@@ -62,13 +62,12 @@ img {
 }
 
 .main-container__loader {
-  z-index: 15;
-  margin: auto;
   position: absolute;
   top: 380px;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
   -webkit-animation: fadeOut 1s linear 1s forwards;
           animation: fadeOut 1s linear 1s forwards;
 }
@@ -323,7 +322,7 @@ button:active {
           transform: scale(1.05);
 }
 
-.restaurants-section .restaurants-section__cards-container__cards .restaurants-section__cards-container__cards__encart, .choose-section a, header .header__loc {
+.restaurants-section .restaurants-section__cards-container__cards .restaurants-section__cards-container__cards__encart, .choose-section a, .header__pages .header__pages__logo, header .header__loc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,6 +353,7 @@ header .header__logo {
   padding: 15px;
 }
 header .header__logo img {
+  max-width: 200px;
   width: 50%;
 }
 header .header__loc {
@@ -394,44 +394,18 @@ header .header__loc i {
 
 .header__pages {
   width: 100%;
-  height: 64px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 150px;
 }
 .header__pages .header__pages__logo {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px;
-}
-.header__pages .header__pages__logo i {
-  position: absolute;
-  top: 28px;
-  right: auto;
-  bottom: auto;
-  left: 25px;
-  -webkit-transform: translate(auto, auto);
-          transform: translate(auto, auto);
+  position: relative;
 }
 .header__pages .header__pages__logo img {
+  padding-top: 20px;
   width: 50%;
 }
-@media screen and (min-width: 1200px) {
-  .header__pages .header__pages__logo img,
-  .header__pages .header__pages__logo i {
-    display: none;
-  }
+.header__pages .header__pages__logo .header__pages__logo__arrow i {
+  position: absolute;
+  left: 20px;
 }
 
 .search-section {
@@ -802,11 +776,6 @@ header .header__loc i {
   font-size: 1.75rem;
   margin-right: 20px;
 }
-@media screen and (min-width: 1200px) {
-  .main-container .menus-container__name h1 {
-    padding-bottom: 190px;
-  }
-}
 .main-container .menus-container__name .menus-container__name__heart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -844,59 +813,15 @@ header .header__loc i {
   -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
   background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .main-container .fa-solid:hover {
   opacity: 1;
 }
-.main-container .menus-container__name__logo {
-  position: relative;
-  width: 100%;
-  max-width: 1440px;
-  height: 97px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.25);
-          box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.25);
-  display: none;
-  z-index: 1;
-}
-@media screen and (min-width: 1200px) {
-  .main-container .menus-container__name__logo {
-    position: absolute;
-    top: 420px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-.main-container .menus-container__name__logo img {
-  width: 15%;
-}
-.main-container .menus-container__name__logo .fas {
-  font-size: 1rem;
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: 10px;
-  -webkit-transform: translate(auto, auto);
-          transform: translate(auto, auto);
-}
-@media screen and (min-width: 1200px) {
-  .main-container .menus-container__name__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.main-container .fa-solid:active {
+  -webkit-transform: scale(2.05);
+          transform: scale(2.05);
 }
 .main-container .menus-container__title {
   -webkit-box-orient: vertical;
@@ -924,23 +849,6 @@ header .header__loc i {
   height: 3px;
   width: 35px;
 }
-.main-container .menus-container__cards_title {
-  line-height: 25px;
-  text-align: left;
-  padding: 0 10px;
-  overflow: hidden;
-  width: 70%;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-.main-container .menus-container__cards_title h3 {
-  font-size: 1.125rem;
-}
-.main-container .menus-container__cards_title__text {
-  white-space: nowrap;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
 .main-container .menus-container__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -952,13 +860,30 @@ header .header__loc i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  background: white;
+  background: #ffffff;
   height: 69px;
   border-radius: 15.0431px;
   margin: 10px;
   gap: 5px;
   -webkit-box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+}
+.main-container .menus-container__cards .menus-container__cards_title {
+  line-height: 25px;
+  text-align: left;
+  padding: 0 10px;
+  overflow: hidden;
+  width: 70%;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+.main-container .menus-container__cards .menus-container__cards_title h3 {
+  font-size: 1.125rem;
+}
+.main-container .menus-container__cards .menus-container__cards_title__text {
+  white-space: nowrap;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
 }
 .main-container .menus-container__cards:hover .menus-container__cards_content__price {
   -webkit-transform: translateX(0);
@@ -971,36 +896,42 @@ header .header__loc i {
 .main-container .menus-container__cards .menus-container__cards_content {
   height: 100%;
 }
-.main-container .menus-container__cards .menus-container__cards_content p {
-  font-family: Roboto-Bold;
-  font-size: 0.94rem;
-}
 .main-container .menus-container__cards .menus-container__cards_content__price {
+  overflow: hidden;
+  background: #99e2d0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  width: 90px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100px;
   height: 100%;
   -webkit-transform: translateX(65px);
           transform: translateX(65px);
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-.main-container .menus-container__cards .menus-container__cards_content__price .menus-container__cards_content__price__anim {
-  background: #99e2d0;
-  width: 100%;
+.main-container .menus-container__cards .menus-container__cards_content__price p {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  z-index: 5;
+  padding-right: 20px;
+  padding-bottom: 12px;
 }
-.main-container .menus-container__cards .menus-container__cards_content__price .fa-circle-check {
-  opacity: 1;
-  color: white;
+.main-container .menus-container__cards .menus-container__cards_content__price .menus-container__cards_content__price__anim {
+  background: aquamarine;
+  width: 100%;
 }
 .main-container .menus-container__cards .menus-container__cards_content__price span {
   border-radius: 0 15px 15px 0;
   padding: 0 15px;
-  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1011,6 +942,10 @@ header .header__loc i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.main-container .menus-container__cards .menus-container__cards_content__price .fas {
+  opacity: 1;
+  color: white;
 }
 
 footer {

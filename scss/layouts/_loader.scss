@@ -1,11 +1,10 @@
 .main-container__loader {
-    z-index: 15;
-    margin: auto;
     position: absolute;
     top: 380px;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
 
     animation: fadeOut 1s linear 1s forwards;
 
@@ -24,6 +23,7 @@
         animation-delay: 0.9s;
 
         @keyframes globalAnim {
+
             100% {
                 opacity: 0;
                 z-index: -1;

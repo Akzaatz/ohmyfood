@@ -1,4 +1,5 @@
 header {
+
   display: flex;
   flex-direction: column;
 
@@ -9,6 +10,7 @@ header {
   }
 
   .header__logo img {
+    max-width: 200px;
     width: 50%;
 
   }
@@ -44,31 +46,26 @@ header {
 
 .header__pages {
   width: 100%;
-  height: 64px;
-  align-items: baseline;
-  display: flex;
-  justify-content: center;
   margin-bottom: 150px;
 
   .header__pages__logo {
-    justify-content: center;
-    display: flex;
-    padding: 15px;
+    @extend %all-center;
+    position: relative;
 
-    i {
-      @include absolute-el(28px, auto, auto, 25px, auto, auto);
+    img {
+      padding-top: 20px;
+      width: 50%;
     }
-  }
 
-  .header__pages__logo img {
-    width: 50%;
-  }
-
-  @media screen and (min-width: 1200px) {
-
-    .header__pages__logo img,
-    .header__pages__logo i {
-      display: none;
+    .header__pages__logo__arrow {
+      i {
+        position: absolute;
+        left: 20px;
+      }
     }
+
   }
+
+
+
 }
