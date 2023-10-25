@@ -79,6 +79,7 @@
     }
 
     .circle1__log__anim {
+        z-index: 5;
 
         color: #9356dc;
         width: 104px;
@@ -91,6 +92,7 @@
     }
 
     .circle1__log__anim p {
+
         font-family: $font1;
         font-size: 1.5rem;
         opacity: 0;
