@@ -20,6 +20,10 @@ footer {
     gap: 10px;
     align-items: flex-start;
 
+    a {
+      color: $white;
+    }
+
     #ustensils,
     #handshake {
       margin-right: 10px;

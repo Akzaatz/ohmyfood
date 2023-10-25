@@ -1,7 +1,7 @@
 .main-container {
   @media screen and (min-width: 1200px) {
     flex-direction: column;
-    z-index: 1;
+
   }
 
   display: flex;
@@ -12,11 +12,15 @@
     position: relative;
     background: $grey2;
     border-radius: 40px 40px 0px 0px;
-    margin-top: 63px;
+    margin-top: 260px;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1055px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 340px;
+    }
   }
 
   //=========== Image En-tête=============================
@@ -24,12 +28,12 @@
     width: 100%;
     position: absolute;
     top: 70px;
-    z-index: -1;
+
 
     img {
       width: 100%;
       max-width: 1440px;
-      height: 375px;
+      height: 275px;
 
       @media screen and (min-width: 1200px) {
         height: 383px;
@@ -187,7 +191,7 @@
 
         height: 100%;
 
-        z-index: 5;
+
         padding-right: 20px;
         padding-bottom: 12px;
       }
