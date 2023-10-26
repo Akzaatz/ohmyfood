@@ -178,8 +178,6 @@
       align-items: flex-start;
       width: 100px;
       height: 100%;
-
-
       transform: translateX(65px);
       transition: all 0.8s;
 
@@ -187,13 +185,10 @@
         background: $white;
         display: flex;
         align-items: flex-end;
-
         height: 100%;
-
         padding-right: 20px;
         padding-bottom: 12px;
       }
-
 
       span {
         border-radius: 0 15px 15px 0;
