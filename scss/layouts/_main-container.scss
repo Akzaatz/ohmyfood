@@ -23,6 +23,10 @@
     }
   }
 
+  .menus-container__cards_content__button {
+    margin-bottom: 30px;
+  }
+
   //=========== Image En-tête=============================
   .main-container__img {
     width: 100%;
@@ -78,7 +82,6 @@
 
   .fa-solid {
     font-size: 1.5rem;
-
     opacity: 0;
     color: transparent;
     background-clip: text;
@@ -94,7 +97,6 @@
     &:active {
       transform: scale(1.2);
     }
-
   }
 
   .menus-container__title {
@@ -154,6 +156,8 @@
       transition: all ease-in-out 0.4s;
     }
 
+
+
     //===========================Animation Cartes================================
 
     &:hover {
@@ -181,6 +185,8 @@
       transform: translateX(65px);
       transition: all 0.8s;
 
+
+
       p {
         background: $white;
         display: flex;
@@ -205,6 +211,7 @@
         opacity: 1;
         color: white;
       }
+
     }
   }
 }
