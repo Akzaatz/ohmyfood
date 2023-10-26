@@ -121,15 +121,14 @@
   }
 
   .fa-regular {
-    @include absolute-el(25%, 0%, 0%, 80%, 0%, 0%);
+    @include absolute-el(25%, 5%, auto, auto, auto, auto);
     position: absolute;
     font-size: 1.5rem;
   }
 
   .fa-solid {
-    @include absolute-el(25%, 0%, 0%, 80%, 0%, 0%);
+    @include absolute-el(25%, 5%, auto, auto, auto, auto);
     font-size: 1.5rem;
-    position: absolute;
     opacity: 0;
     color: transparent;
     background-clip: text;

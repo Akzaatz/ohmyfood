@@ -1,5 +1,5 @@
 .choose-section {
-
+  z-index: -2;
   margin-bottom: 60px;
   position: relative;
 
@@ -10,10 +10,8 @@
     justify-content: center;
   }
 
-
-
   h2 {
-
+    color: white;
     padding-bottom: 0;
     font-family: $font5;
     font-size: 1.5rem;

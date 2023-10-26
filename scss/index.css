@@ -299,7 +299,7 @@ button {
   max-width: 218px;
   height: 50px;
   border-radius: 25px;
-  margin: 20px 0 50px;
+  margin-top: 20px;
   -webkit-box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.25);
           box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.25);
   -webkit-transition: all 453ms linear;
@@ -425,6 +425,7 @@ header .header__loc i {
 }
 
 .choose-section {
+  z-index: -2;
   margin-bottom: 60px;
   position: relative;
 }
@@ -440,6 +441,7 @@ header .header__loc i {
   }
 }
 .choose-section h2 {
+  color: white;
   padding-bottom: 0;
   font-family: Roboto-Bold;
   font-size: 1.5rem;
@@ -675,24 +677,23 @@ header .header__loc i {
 .restaurants-section .fa-regular {
   position: absolute;
   top: 25%;
-  right: 0%;
-  bottom: 0%;
-  left: 80%;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  right: 5%;
+  bottom: auto;
+  left: auto;
+  -webkit-transform: translate(auto, auto);
+          transform: translate(auto, auto);
   position: absolute;
   font-size: 1.5rem;
 }
 .restaurants-section .fa-solid {
   position: absolute;
   top: 25%;
-  right: 0%;
-  bottom: 0%;
-  left: 80%;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  right: 5%;
+  bottom: auto;
+  left: auto;
+  -webkit-transform: translate(auto, auto);
+          transform: translate(auto, auto);
   font-size: 1.5rem;
-  position: absolute;
   opacity: 0;
   color: transparent;
   -webkit-background-clip: text;
@@ -929,10 +930,6 @@ header .header__loc i {
   height: 100%;
   padding-right: 20px;
   padding-bottom: 12px;
-}
-.main-container .menus-container__cards .menus-container__cards_content__price .menus-container__cards_content__price__anim {
-  background: aquamarine;
-  width: 100%;
 }
 .main-container .menus-container__cards .menus-container__cards_content__price span {
   border-radius: 0 15px 15px 0;
