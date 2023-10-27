@@ -67,7 +67,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 6;
   -webkit-animation: fadeOut 1s linear 1s forwards;
           animation: fadeOut 1s linear 1s forwards;
 }
@@ -150,7 +150,6 @@ img {
   animation: animcercle 1s linear reverse;
 }
 .main-container__loader .circle1__log__anim {
-  z-index: 5;
   color: #9356dc;
   width: 104px;
   height: 128px;
@@ -1037,6 +1036,6 @@ footer ul #handshake {
     margin-right: 2px;
   }
   footer .partnership ul li:nth-child(2) {
-    margin-right: 120px;
+    margin-right: 70px;
   }
 }/*# sourceMappingURL=index.css.map */
