@@ -350,7 +350,7 @@ header .header__logo {
 header .header__logo__arrow i {
   position: absolute;
   left: 20px;
-  top: 10px;
+  top: 8px;
 }
 header .header__logo img {
   max-width: 200px;
@@ -676,25 +676,16 @@ header .header__loc i {
 }
 .restaurants-section .fa-regular {
   position: absolute;
-  top: 25%;
+  font-size: 1.3rem;
+  top: 20%;
   right: 5%;
-  bottom: auto;
-  left: auto;
-  -webkit-transform: translate(auto, auto);
-          transform: translate(auto, auto);
-  position: absolute;
-  font-size: 1.5rem;
 }
 .restaurants-section .fa-solid {
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 5%;
-  bottom: auto;
-  left: auto;
-  -webkit-transform: translate(auto, auto);
-          transform: translate(auto, auto);
-  font-size: 1.5rem;
   opacity: 0;
+  font-size: 1.3rem;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -793,29 +784,21 @@ header .header__loc i {
 }
 .main-container .menus-container__name .fa-regular,
 .main-container .menus-container__name .fa-solid {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   position: absolute;
-  top: 33px;
-  right: 10px;
-  bottom: auto;
-  left: auto;
-  -webkit-transform: translate(auto, auto);
-          transform: translate(auto, auto);
+  top: 38px;
+  right: 25px;
 }
 @media screen and (min-width: 1200px) {
   .main-container .menus-container__name .fa-regular,
   .main-container .menus-container__name .fa-solid {
     position: absolute;
-    top: 33px;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    -webkit-transform: translate(auto, auto);
-            transform: translate(auto, auto);
+    top: 38px;
+    right: 370px;
   }
 }
 .main-container .fa-solid {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   opacity: 0;
   color: transparent;
   -webkit-background-clip: text;

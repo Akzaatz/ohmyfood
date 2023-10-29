@@ -71,17 +71,22 @@
 
     .fa-regular,
     .fa-solid {
-      font-size: 1.5rem;
-      @include absolute-el(33px, 10px, auto, auto, auto, auto);
+      font-size: 1.3rem;
+      position: absolute;
+      top: 38px;
+      right: 25px;
+
 
       @media screen and (min-width: 1200px) {
-        @include absolute-el(33px, auto, auto, auto, auto, auto);
+        position: absolute;
+        top: 38px;
+        right: 370px;
       }
     }
   }
 
   .fa-solid {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     opacity: 0;
     color: transparent;
     background-clip: text;
