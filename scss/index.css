@@ -79,7 +79,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-animation: globalAnim 3s ease-in-out forwards;
           animation: globalAnim 3s ease-in-out forwards;
   -webkit-animation-delay: 0.9s;
@@ -132,7 +132,7 @@ img {
   width: 135px;
   height: 135px;
   border-radius: 50%;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   opacity: 0.5;
   border-top-color: transparent;
   border-bottom-color: transparent;
@@ -292,7 +292,7 @@ img {
 button {
   cursor: pointer;
   border: none;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   font-family: Roboto-Medium;
   color: white;
   width: 70%;
@@ -384,7 +384,7 @@ header #header__loc__imput::placeholder {
   color: #101010;
 }
 header #header__loc__imput[type=text]:focus {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   opacity: 0.5;
 }
 header .header__loc i {
@@ -441,7 +441,6 @@ header .header__loc i {
   }
 }
 .choose-section h2 {
-  color: white;
   padding-bottom: 0;
   font-family: Roboto-Bold;
   font-size: 1.5rem;
@@ -541,7 +540,6 @@ header .header__loc i {
 
 .restaurants-section {
   background: #f6f6f6;
-  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .restaurants-section {
@@ -1019,6 +1017,6 @@ footer ul #handshake {
     margin-right: 2px;
   }
   footer .partnership ul li:nth-child(2) {
-    margin-right: 70px;
+    margin-right: 30px;
   }
 }/*# sourceMappingURL=index.css.map */
