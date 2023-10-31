@@ -83,11 +83,11 @@
     .restaurants-section__cards-container__cards__encart {
       position: absolute;
       @include absolute-el(10%, 5%, 0, auto, 0, 0);
+      @extend %all-center;
       height: 29px;
       width: 80px;
       font-family: $font4;
       font-size: 0.875rem;
-      @extend %all-center;
       background: $green1;
 
       &.restaurants-section__cards-container__cards__encart p {

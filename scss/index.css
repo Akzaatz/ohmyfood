@@ -971,6 +971,10 @@ footer ul #ustensils,
 footer ul #handshake {
   margin-right: 10px;
 }
+footer ul #handshake {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 @media screen and (min-width: 1200px) {
   footer {
     padding: 30px 0 20px;
